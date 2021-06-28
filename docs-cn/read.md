@@ -6,7 +6,7 @@ CURL --> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表
 
 
 ### 登录体验机器
-（工作人员会单独发帐号密码）
+（请联系德华 索要 帐号密码）
 
 ### 应用目录
     cd /home/takin/easydemo  
@@ -25,7 +25,8 @@ echo 1 | sh curl.sh
 ``` 
 
 ### 执行压测流量到影子表(pt_t_user)
-``` echo 2 | sh curl.sh
+``` 
+echo 2 | sh curl.sh
 
 {"code":200,"data":"统计业务表数据: 2","error":null}
 {"code":200,"data":"统计影子表数据: 0","error":null}
