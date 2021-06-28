@@ -45,12 +45,15 @@ http://demo.forcecop.shulie.io/
 
 http://demo.forcecop.shulie.io/#/appManage
 
-1_applist.png
+![](images/1_applist.png)
+
 
 #### easydemo-gateway 应用状态
 http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481948296089600
 
-2_app_gateway_remote.png
+
+
+![](images/2_app_gateway_remote.png)
 
 
 主要看一下 远程调用和插件管理的状态
@@ -58,42 +61,54 @@ http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=68144819482960896
 #### easydemo-usercenter应用状态
 http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481944844177408
 
-3_app_gateway_plugin.png
+
+![](images/3_app_gateway_plugin.png)
 
 
 ##### easydemo-usercenter影子库/表设置
 
 http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481944844177408
 
-4_app_usercenter_mirror_info.png
+![](images/4_app_usercenter_mirror_info.png)
 
 
 ### 业务活动列表
 http://demo.forcecop.shulie.io/#/businessActivity
 
-5_business_list.png
+![](images/5_business_list.png)
+
 
 ### 编辑业务活动
 
-6_edit_business_list.png
 
+![](images/6_edit_business_list.png)
 
 ### 业务流程列表
-business_flow_list.png
+![](images/business_flow_list.png)
 
 ### 编辑业务流程
 
-edit_flow.png
+![](images/edit_flow.png)
+
 
 
 ### 测试脚本
 http://demo.forcecop.shulie.io/#/scriptManage
 
-script_list.png
+![](images/script_list.png)
+
 
 ### 压测场景
 
-pressureTestScene.png
+![](images/pressureTestScene.png)
+
+
+
+### 压测报告
+
+
+![](images/perform_result.png)
+
 
 
 
