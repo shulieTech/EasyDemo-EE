@@ -36,10 +36,14 @@ echo 1 | sh curl.sh
  
 ```
 
-#### 登录生产压测控制台 Takin
+### 登录生产压测控制台 Takin
 http://demo.forcecop.shulie.io/  
 
 用户名 easydemo 密码easydemo
+
+### 查看应用接入状态 
+
+http://demo.forcecop.shulie.io/#/appManage
 
 
 
