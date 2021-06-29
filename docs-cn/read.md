@@ -1,10 +1,10 @@
 ### Takin 体验（第一关） 
 
 只需要做这几步
-1.登录阿里云服务器 ssh takin@47.98.225.139
-2.密码请联系德华
-3.执行脚本、执行调试信息，确认压测数据落到了影子表
-4.执行压测，查询数据库的信息
+1.登录阿里云服务器 ssh takin@47.98.225.139  
+2.密码请联系德华  
+3.执行脚本、执行调试信息，确认压测数据落到了影子表  
+4.执行压测，查询数据库的信息  
 
 ### 调用关系
 
@@ -20,7 +20,25 @@ http://demo.forcecop.shulie.io/
 
 
 ### 应用目录
-    cd /home/takin/easydemo  
+    cd /home/takin/easydemo 
+
+
+### 启动应用 
+
+```
+cd ~/easydemo/app/gateway
+sh gateway.sh  start
+
+cd ~/easydemo/app/user
+sh usercenter.sh start
+```
+
+查看各个应用是否有错误日志
+
+```
+cd ~/easydemo/
+sh log_cnt.sh
+```
 
 #### 执行业务流量到真实表(t_user)    
 ```
@@ -38,31 +56,28 @@ echo 1 | sh curl.sh
 
 URL http://demo.forcecop.shulie.io/#/businessActivity
 
-
 ![](images/round1-add-item.png)
 
 添加成功
 
 ![](images/round1-item-list.png)
 
-
 ### 添加业务流程
 
 URL http://demo.forcecop.shulie.io/#/businessFlow
 
-
 ![](images/roud2_save_process_1.png)
 ![](images/roud2_save_process_2.png)
-
 
 ### 应用管理
 url http://demo.forcecop.shulie.io/#/appManage
 
 #### gateway应用 ，添加调用白名单
 
-
 ![](images/round1-gateway-add-white.png)
+添加白名单
 ![](images/round1-gateway-add-white-2.png)
+
 ![](images/round1-gateway-add-white-3.png)
 
 
@@ -90,7 +105,6 @@ echo 2 | sh curl.sh
  
 ```
 
-
 ### 查看应用接入状态 
 
 http://demo.forcecop.shulie.io/#/appManage
@@ -99,8 +113,8 @@ http://demo.forcecop.shulie.io/#/appManage
 
 
 #### easydemo-gateway 应用状态
-http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481948296089600
 
+http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481948296089600
 
 ![](images/2_app_gateway_remote.png)
 
@@ -114,40 +128,17 @@ http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=68144819448441774
 ![](images/3_app_gateway_plugin.png)
 
 
-##### easydemo-usercenter影子库/表设置
 
-http://demo.forcecop.shulie.io/#/appManage/details?tabKey=0&id=6814481944844177408
-
-![](images/4_app_usercenter_mirror_info.png)
-
-
-### 业务活动列表
-http://demo.forcecop.shulie.io/#/businessActivity
-![](images/5_business_list.png)
-
-### 编辑业务活动
-
-![](images/6_edit_business_list.png)
-
-### 业务流程列表
-![](images/business_flow_list.png)
-
-### 编辑业务流程
-
-![](images/edit_flow.png)
-
-### 测试脚本
+### 压测脚本
 http://demo.forcecop.shulie.io/#/scriptManage
 
 ![](images/script_list.png)
-
 
 ### 压测场景
 
 ![](images/pressureTestScene.png)
 
 ### 压测报告
-
 
 ![](images/perform_result.png)
 
