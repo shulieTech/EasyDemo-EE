@@ -5,7 +5,7 @@
  客服人员 德华   微信 whitepoplar 。为了保障良好的沟通效果，请加之前备注 （takin ，以及您所在的企业名称、所在岗位）
 
 3.执行脚本、执行调试信息，确认压测数据落到了影子表  
-4.执行压测，查询数据库的信息  
+4.执行压测，查询数据库的信息   
 
 ### 调用关系
 
@@ -13,16 +13,13 @@ CURL --> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表
 
 Takin 控制台（链路调试）--> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表）
 
-
 ### 登录生产压测控制台 Takin
 http://demo.forcecop.shulie.io/  
 
 用户名 easydemo 密码easydemo
 
-
 ### 应用目录
     cd /home/takin/easydemo 
-
 
 ### 启动应用 
 
