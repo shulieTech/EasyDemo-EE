@@ -1,7 +1,7 @@
 ### Takin 体验（第一关） 
 
 只需要做这几步
-1.登录阿里云服务器 ssh takin@47.98.225.139  
+1.登录阿里云服务器 ssh takin@47.98.225.139   
 2.密码请联系德华  
 3.执行脚本、执行调试信息，确认压测数据落到了影子表  
 4.执行压测，查询数据库的信息  
@@ -144,11 +144,22 @@ http://demo.forcecop.shulie.io/#/scriptManage
 
 
 
+### 查看影子表里面的数据量
 
+```
+###查看真实表的数据
+mysql -h127.0.0.1 -udemo_db_user -pdemo_db_passwd easydemo_db -P3306 -e"select count(*) from t_user"
 
+###查看影子表的数据
 
+mysql -h127.0.0.1 -udemo_db_user -pdemo_db_passwd easydemo_db -P3306 -e"select count(*) from pt_t_user"
 
-
-
-
+mysql: [Warning] Using a password on the command line interface can be insecure.
++----------+
+| count(*) |
++----------+
+|    33001 |
++----------+
+```
+可以在进行压测之前，查看压测数据是否都落入到影子表(pt_t_user)
 
