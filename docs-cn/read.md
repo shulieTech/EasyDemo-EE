@@ -1,10 +1,11 @@
-### Takin 体验（第一关） 
-
+### Takin 体验
 只需要做这几步
-1.登录阿里云服务器 ssh takin@47.98.225.139  
-2.密码请联系德华  
+1.登录阿里云服务器 ssh takin@47.98.225.139   
+2.密码请联系数列科技
+ 客服人员 德华   微信 whitepoplar 。为了保障良好的沟通效果，请加之前备注 （takin ，以及您所在的企业名称、所在岗位）
+
 3.执行脚本、执行调试信息，确认压测数据落到了影子表  
-4.执行压测，查询数据库的信息  
+4.执行压测，查询数据库的信息   
 
 ### 调用关系
 
@@ -12,16 +13,13 @@ CURL --> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表
 
 Takin 控制台（链路调试）--> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表）
 
-
 ### 登录生产压测控制台 Takin
 http://demo.forcecop.shulie.io/  
 
 用户名 easydemo 密码easydemo
 
-
 ### 应用目录
     cd /home/takin/easydemo 
-
 
 ### 启动应用 
 
@@ -144,11 +142,22 @@ http://demo.forcecop.shulie.io/#/scriptManage
 
 
 
+### 查看影子表里面的数据量
 
+```
+###查看真实表的数据
+mysql -h127.0.0.1 -udemo_db_user -pdemo_db_passwd easydemo_db -P3306 -e"select count(*) from t_user"
 
+###查看影子表的数据
 
+mysql -h127.0.0.1 -udemo_db_user -pdemo_db_passwd easydemo_db -P3306 -e"select count(*) from pt_t_user"
 
-
-
-
+mysql: [Warning] Using a password on the command line interface can be insecure.
++----------+
+| count(*) |
++----------+
+|    33001 |
++----------+
+```
+可以在进行压测之前，查看压测数据是否都落入到影子表(pt_t_user)
 
