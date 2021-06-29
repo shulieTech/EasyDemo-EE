@@ -68,7 +68,7 @@ url http://demo.forcecop.shulie.io/#/appManage
 
 ### usercenter应用，添加影子表配置
 
-````
+```
 数据源链接：jdbc:mysql://192.168.100.252:3306/easydemo_db
 表名：pt_t_user
 
