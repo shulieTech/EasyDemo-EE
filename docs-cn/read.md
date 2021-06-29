@@ -13,6 +13,10 @@ CURL --> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表
 
 Takin 控制台（链路调试）--> Easydemo-gateway--> Easydemo-usercenter-> MySQL（真实表、影子表）
 
+
+
+![](images/conn.png)
+
 ### 登录生产压测控制台 Takin
 http://demo.forcecop.shulie.io/  
 
